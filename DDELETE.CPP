@@ -25,7 +25,9 @@ int main() {
     if(le % 2 == 1) {
         cout<<le*chan;
     } else {
-        cout<<dc(le) + dc(chan);
+        int c = chan*(chan-1)/2;
+        int l = le*(le-1)/2;
+        cout<<c+l;
     }
     return 0;
 }
